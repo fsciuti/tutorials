@@ -1,0 +1,22 @@
+{
+"Tutorial 1": {
+    "title": "Tutorial 1",
+    "description": "",
+    "command": "",
+    "steps": [
+      "url1",
+      "url2"
+    ],
+    "type": "tutorial"
+  },
+"Tutorial 2": {
+    "title": "Tutorial 1",
+    "description": "",
+    "command": "",
+    "steps": [
+"url1",
+"url2"
+],
+    "type": "tutorial"
+}
+}
