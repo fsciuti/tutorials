@@ -4,9 +4,9 @@ called a value, inside a key. This data can later be retrieved only if we know
 the exact key used to store it. We can use the command [SET](#help) to store the value
 "fido" at key "server:name":
 
-<pre>
-    [SET server:name "fido"][#run]</a>
-</pre>
+
+    [SET server:name "fido"][#run]
+
 
 Redis will store our data permanently, so we can later ask "What is the value
 stored at key server:name?" and Redis will reply with "fido":
