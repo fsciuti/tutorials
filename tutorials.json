@@ -1,15 +1,15 @@
 {
-"Tutorial_1": {
+"tutorial_1": {
     "title": "Tutorial 1",
     "description": "",
     "command": "",
     "steps": [
-      "url1",
-      "url2"
+      "step_01",
+      "step_02"
     ],
     "type": "tutorial"
   },
-"Tutorial_2": {
+"tutorial_2": {
     "title": "Tutorial 2",
     "description": "",
     "command": "",
