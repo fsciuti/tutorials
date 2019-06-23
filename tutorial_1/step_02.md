@@ -3,10 +3,12 @@ key and associated value, SET-if-not-exists (called [SETNX](#help) on Redis) tha
 key only if it does not already exist, and [INCR](#help) to atomically increment a
 number stored at a given key:
 
-<pre><code>
-    <a href="#run">SET connections 10</a>
-    <a href="#run">INCR connections</a> => 11
-    <a href="#run">INCR connections</a> => 12
-    <a href="#run">DEL connections</a>
-    <a href="#run">INCR connections</a> => 1
-</code></pre>
+[SET connections 10](#run)
+
+[INCR connections](#run) => 11
+
+[INCR connections](#run) => 12
+
+[DEL connections](#run)
+
+[INCR connections<](#run) => 1
