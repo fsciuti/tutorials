@@ -4,8 +4,13 @@
     "description": "",
     "command": "",
     "steps": [
+      "step_00",
       "step_01",
-      "step_02"
+      "step_02",
+      "step_03",
+      "step_04",
+      "step_05",
+      "step_06"
     ],
     "type": "tutorial"
   },
