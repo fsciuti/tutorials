@@ -5,7 +5,7 @@ the exact key used to store it. We can use the command [SET](#help) to store the
 "fido" at key "server:name":
 
 <pre>
-    <a href="#run">SET server:name "fido"</a>
+    [SET server:name "fido"][#run]</a>
 </pre>
 
 Redis will store our data permanently, so we can later ask "What is the value
