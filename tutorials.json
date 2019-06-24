@@ -3,29 +3,16 @@
     "title": "Tutorial 1",
     "description": "",
     "command": "",
-    "steps": [
-      "step_00",
-      "step_01",
-      "step_02",
-      "step_03",
-      "step_04",
-      "step_05",
-      "step_06",
-      "step_07",
-      "step_08",
-      "step_09",
-      "step_10"
-    ],
+    "usedCommands": [],
+    "steps": "tutorial_1",
     "type": "tutorial"
   },
 "tutorial_2": {
     "title": "Tutorial 2",
     "description": "",
     "command": "",
-    "steps": [
-"url1",
-"url2"
-],
+    "usedCommands": [],
+    "steps": "tutorial_2",
     "type": "tutorial"
 }
 }

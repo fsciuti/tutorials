@@ -115,3 +115,93 @@ parameter means to retrieve all elements in the list.
 > [LRANGE friends 0 1](#run) => ["Sam","Tom"]
 
 > [LRANGE friends 1 2](#run) => ["Tom","Bob"]
+
+---
+[LLEN](#help) returns the current length of the list.
+
+> [LLEN friends](#run) => 3
+
+The command [LPOP](#help) removes the first element from the list and returns it.
+
+> [LPOP friends](#run) => "Sam"
+
+The command [RPOP](#help) removes the last element from the list and returns it.
+
+> [RPOP friends](#run) => "Bob"
+
+Note that the list now only has one element:
+
+> [LLEN friends](#run) => 1
+
+> [LRANGE friends 0 -1](#run) => ["Tom"]
+
+---
+The next data structure that we'll look at is a set. A set is similar to a
+list, except it does not have a specific order and each element may only appear
+once. Some of the important commands in working with sets are [SADD](#help), [SREM](#help),
+[SISMEMBER](#help), [SMEMBERS](#help) and [SUNION](#help).
+
+The command [SADD](#help) adds the given value to the set.
+> [SADD superpowers "flight"](#run)
+
+> [SADD superpowers "x-ray vision"](#run)
+
+> [SADD superpowers "reflexes"](#run)
+
+The command [SREM](#help) removes the given value from the set.
+
+> [SREM superpowers "reflexes"](#run)
+
+---
+[SISMEMBER](#help) tests if the given value is in the set.
+
+> [SISMEMBER superpowers "flight"](#run) => true
+
+> [SISMEMBER superpowers "reflexes"](#run) => false
+
+The command [SMEMBERS](#help) returns a list of all the members of this set.
+
+> [SMEMBERS superpowers](#run)> => ["flight","x-ray vision"]
+
+
+The command [SUNION](#help) combines two or more sets and returns the list of all elements.
+
+> [SADD birdpowers "pecking"](#run)
+
+> [SADD birdpowers "flight"](#run)
+
+> [SUNION superpowers birdpowers](#run) => ["flight","x-ray vision","pecking"]
+
+---
+The last data structure which Redis supports is the sorted set.  It is similar
+to a regular set, but now each value has an associated score.  This score is
+used to sort the elements in the set.
+
+
+> [ZADD hackers 1940 "Alan Kay"](#run)
+
+> [ZADD hackers 1953 "Richard Stallman"](#run)
+
+> [ZADD hackers 1965 "Yukihiro Matsumoto"](#run)
+
+> [ZADD hackers 1916 "Claude Shannon"](#run)
+
+> [ZADD hackers 1969 "Linus Torvalds"](#run)
+
+> [ZADD hackers 1912 "Alan Turing"](#run)
+
+In these examples, the scores are years of birth and the values are the names
+of famous hackers.
+
+> [ZRANGE hackers 2 4](#run) => ["Alan Kay","Richard Stallman","Yukihiro Matsumoto"]
+
+---
+That wraps up the *Try Redis* tutorial. Please feel free to goof around with
+this console as much as you'd like.
+
+Check out the following links to continue learning about Redis.
+
+* [Redis Documentation](http://redis.io/documentation)
+* [Command Reference](http://redis.io/commands)
+* [Implement a Twitter Clone in Redis](http://redis.io/topics/twitter-clone)
+* [Introduction to Redis Data Types](http://redis.io/topics/data-types-intro)
