@@ -6,13 +6,5 @@
     "usedCommands": [],
     "steps": "tutorial_1",
     "type": "tutorial"
-  },
-"tutorial_2": {
-    "title": "Tutorial 2",
-    "description": "",
-    "command": "",
-    "usedCommands": [],
-    "steps": "tutorial_2",
-    "type": "tutorial"
-}
+  }
 }
